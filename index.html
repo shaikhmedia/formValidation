@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basic Javascript Practice</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Create Account</h3>
+        <input type="checkbox"id="checkbox" class="checkbox">
+        <label id="label" for="checkbox" title="Change theme">
+            <div id="ball"></div>
+        </label>
+        <form class="form-control">
+            <div class="form-element">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="username173">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="name-error">Error message</small>
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="user@domain.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="(A-Z, a-z, 0-9, !)">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-element">
+                <label for="password_check">Password Check</label>
+                <input type="password" name="" id="password_check" placeholder="(A-Z, a-z, 0-9, !)">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

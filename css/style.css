@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 126) 35%, rgb(0, 213, 255) 100%);
+    
+}
+
+.container {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 100px auto;
+    border-radius: 2px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.479);
+    position: relative;
+}
+
+.container h3 {
+    padding: 20px;
+    background-color: #e2e2e2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-element i {
+    position: absolute;
+    top: 28px;
+    left: 240px;
+    display: none;
+}
+
+.form-element label {
+    margin-bottom: 3px;
+}
+
+.form-element small {
+    display: none;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+input:last-child {
+    margin-bottom: 0px;
+    background-color: rgb(158, 158, 158);
+    color: white;
+    padding: 7px;
+    font-size: .9em;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-element small {
+    margin-top: 2px;
+    color: red;
+}
+
+.error input {
+    border: 1.5px solid red;
+}
+
+.success input {
+    border: 1.5px solid green;
+}
+
+.error i.fa-exclamation-circle {
+    display: block;
+    color: red;
+}
+
+.success i.fa-check-circle {
+    display: block;
+    color: green;
+}
+
+.error small {
+    display: block;
+}
+
+#label {
+    display: flex;
+    align-items: center;
+    width: 42px;
+    height: 22px;
+    background-color: rgb(158, 158, 158);
+    position: absolute;
+    border-radius: 10px;
+    left: 235px;
+    top: 21px;
+}
+
+#ball {
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: all .2s linear;
+}
+
+/* Move the ball to right when checkbox is checked*/
+.checkbox:checked + #label > #ball{
+    transform: translateX(18px);
+}
+
+.checkbox {
+    display: none;
+}
+
+/* Dark class added to body, container, h3 and submit button*/
+body.dark{
+    background: rgb(51, 51, 51);
+    color: white;
+}
+.container.dark {
+    background-color: rgb(0, 176, 182);
+}
+
+.container > h3.dark {
+    background-color: rgba(94, 94, 94, 0.726);
+}
+
+#submit.dark {
+    background-color: rgba(94, 94, 94, 0.726);
+    border: none;
+}
